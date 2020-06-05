@@ -1,0 +1,34 @@
+
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(ë‡Öƒüÿÿÿÿ8¹€Ñá¦.
+F
+java:S1125_")Remove the literal "false" boolean value.(†—æá8À‰æá¦.
+d
+java:S1126R"BReplace this if-then-else statement by a single method invocation.(¦Ûÿùÿÿÿÿ8À‰æá¦.
+U	java:S106m"9Replace this use of System.out or System.err by a logger.(å¨§š8¹€Ñá¦.
+t
+java:S37766"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(§­»¨ûÿÿÿÿ8¹€Ñá¦.
+_
+java:S1126_"BReplace this if-then-else statement by a single method invocation.(†—æá8À‰æá¦.
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(‡äÜµ8À‰æá¦.
+
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õä‘é8¹€Ñá¦.
+L
+java:S5411R"*Use the primitive boolean expression here.(¦Ûÿùÿÿÿÿ8À‰æá¦.
+Z
+java:S1128	"8Remove this unused import 'javafx.scene.control.Button'.(Ë Í‹øÿÿÿÿ8¹€Ñá¦.
+N
+java:S1602*",Remove useless curly braces around statement(åƒªüÿÿÿÿ8ßÅØá¦.
+G
+java:S1481="*Remove this unused "robot" local variable.(¹Ì˜8¹€Ñá¦.
+G
+java:S5411_"*Use the primitive boolean expression here.(†—æá8À‰æá¦.
+H
+java:S1172#"&Remove these unused method parameters.(ÛŒ¦…ıÿÿÿÿ8¹€Ñá¦.
+K
+java:S1125R")Remove the literal "false" boolean value.(¦Ûÿùÿÿÿÿ8À‰æá¦.
+T
+java:S11726"2Remove this unused method parameter "actionEvent".(§­»¨ûÿÿÿÿ8¹€Ñá¦.
+Z	java:S106X"9Replace this use of System.out or System.err by a logger.(†ğ¼Àûÿÿÿÿ8À‰æá¦.
+U	java:S106f"9Replace this use of System.out or System.err by a logger.(—äÎ8À‰æá¦.
+N
+java:S1172B",Remove this unused method parameter "event".(¤Ğ¢ˆûÿÿÿÿ8À‰æá¦.
