@@ -26,7 +26,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>sample.Main</mainClass>
+                  <mainClass>com.sub.Main</mainClass>
                 </transformer>
               </transformers>
             </configuration>

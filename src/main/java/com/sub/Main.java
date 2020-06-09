@@ -1,4 +1,4 @@
-package sample;
+package com.sub;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,22 +13,16 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-      //  Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-      // primaryStage.setTitle("Hello World");
-       // primaryStage.setScene(new Scene());
-       // primaryStage.show();
 
         this.stage=primaryStage;
-        FXMLLoader loader = new FXMLLoader( Main.class.getResource( "/sample.fxml" ));
+        FXMLLoader loader = new FXMLLoader( Main.class.getResource( "/app.fxml" ));
         AnchorPane pane = loader.load();
         scene = new Scene(pane);
-
         stage.setScene(scene);
         stage.setResizable( false );
        // stage.initStyle( StageStyle.DECORATED.UNDECORATED );
         stage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

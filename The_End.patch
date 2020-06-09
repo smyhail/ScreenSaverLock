@@ -1,0 +1,373 @@
+Index: src/main/resources/sample.fxml
+===================================================================
+--- src/main/resources/sample.fxml	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
++++ src/main/resources/sample.fxml	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
+@@ -1,26 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-
+-<?import javafx.scene.control.CheckBox?>
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.control.Slider?>
+-<?import javafx.scene.control.ToggleButton?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.text.Font?>
+-
+-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="247.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+-   <children>
+-      <CheckBox fx:id="cbShift" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="Shift" />
+-      <CheckBox fx:id="cbCLock" layoutX="72.0" layoutY="39.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="Caps Lock" />
+-      <CheckBox fx:id="cbNLock" layoutX="161.0" layoutY="46.0" mnemonicParsing="false" text="Num Lock" />
+-      <Label fx:id="infoLabel" contentDisplay="RIGHT" layoutX="35.0" layoutY="14.0" prefHeight="17.0" prefWidth="212.0" text="Symulator klawiatury" textAlignment="CENTER">
+-         <font>
+-            <Font name="System Bold" size="16.0" />
+-         </font>
+-      </Label>
+-      <ToggleButton fx:id="tbDoRun" layoutX="18.0" layoutY="177.0" mnemonicParsing="false" onAction="#doRun" prefHeight="25.0" prefWidth="212.0" text="ToggleButton" />
+-      <Slider fx:id="sliderTime" layoutX="18.0" layoutY="130.0" majorTickUnit="459.0" max="900.0" min="1" minorTickCount="50" prefHeight="14.0" prefWidth="219.0" showTickLabels="true" snapToTicks="true" value="300.0" />
+-      <Label fx:id="infoLabel2" layoutX="9.0" layoutY="80.0" prefHeight="17.0" prefWidth="219.0" textAlignment="CENTER" />
+-      <Label fx:id="infoLabel3" layoutX="33.0" layoutY="106.0" prefHeight="17.0" prefWidth="191.0" textAlignment="CENTER" />
+-      <Label layoutX="4.0" layoutY="206.0" prefHeight="17.0" prefWidth="113.0" text="\@create by SUB" />
+-   </children>
+-</AnchorPane>
+Index: src/main/resources/app.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/app.fxml	(date 1591725372164)
++++ src/main/resources/app.fxml	(date 1591725372164)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.control.CheckBox?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.Slider?>
++<?import javafx.scene.control.ToggleButton?>
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.text.Font?>
++
++<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="247.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sub.Controller">
++    <children>
++        <CheckBox fx:id="cbShift" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="Shift" />
++        <CheckBox fx:id="cbCLock" layoutX="72.0" layoutY="39.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="Caps Lock" />
++        <CheckBox fx:id="cbNLock" layoutX="161.0" layoutY="46.0" mnemonicParsing="false" text="Num Lock" />
++        <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="14.0" prefHeight="25.0" prefWidth="247.0" text="Screen saver lock" textAlignment="CENTER" textOverrun="CLIP">
++            <font>
++                <Font name="System Bold" size="16.0" />
++            </font>
++        </Label>
++        <ToggleButton fx:id="tbDoRun" layoutX="18.0" layoutY="177.0" mnemonicParsing="false" onAction="#doRun" prefHeight="25.0" prefWidth="212.0" text="ToggleButton" />
++        <Slider fx:id="sliderTime" layoutX="18.0" layoutY="130.0" majorTickUnit="459.0" max="900.0" min="1" minorTickCount="50" prefHeight="14.0" prefWidth="219.0" showTickLabels="true" snapToTicks="true" value="300.0" />
++        <Label fx:id="infoLabel2" layoutX="9.0" layoutY="80.0" prefHeight="17.0" prefWidth="219.0" textAlignment="CENTER" />
++        <Label fx:id="infoLabel3" layoutX="33.0" layoutY="106.0" prefHeight="17.0" prefWidth="191.0" textAlignment="CENTER" />
++        <Label layoutX="4.0" layoutY="206.0" prefHeight="17.0" prefWidth="113.0" text="\@create by SUbycha" />
++    </children>
++</AnchorPane>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
++++ .idea/vcs.xml	(date 1591381073160)
+@@ -1,7 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+-</project>
+-
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
++++ pom.xml	(date 1591724890301)
+@@ -33,7 +33,7 @@
+                         <configuration>
+                             <transformers>
+                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+-                                    <mainClass>sample.Main</mainClass>
++                                    <mainClass>com.sub.Main</mainClass>
+                                 </transformer>
+                             </transformers>
+                         </configuration>
+Index: src/main/java/sample/Main.java
+===================================================================
+--- src/main/java/sample/Main.java	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
++++ src/main/java/com/sub/Main.java	(date 1591724955120)
+@@ -1,4 +1,4 @@
+-package sample;
++package com.sub;
+ 
+ import javafx.application.Application;
+ import javafx.fxml.FXMLLoader;
+@@ -13,23 +13,17 @@
+ 
+     @Override
+     public void start(Stage primaryStage) throws Exception{
+-      //  Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+-      // primaryStage.setTitle("Hello World");
+-       // primaryStage.setScene(new Scene());
+-       // primaryStage.show();
+ 
+         this.stage=primaryStage;
+-        FXMLLoader loader = new FXMLLoader( Main.class.getResource( "/sample.fxml" ));
++        FXMLLoader loader = new FXMLLoader( Main.class.getResource( "/app.fxml" ));
+         AnchorPane pane = loader.load();
+         scene = new Scene(pane);
+-
+         stage.setScene(scene);
+         stage.setResizable( false );
+        // stage.initStyle( StageStyle.DECORATED.UNDECORATED );
+         stage.show();
+     }
+ 
+-
+     public static void main(String[] args) {
+         launch(args);
+     }
+Index: src/main/java/sample/Controller.java
+===================================================================
+--- src/main/java/sample/Controller.java	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
++++ src/main/java/com/sub/Controller.java	(date 1591725248207)
+@@ -1,4 +1,4 @@
+-package sample;
++package com.sub;
+ 
+ import javafx.animation.KeyFrame;
+ import javafx.animation.Timeline;
+@@ -32,13 +32,13 @@
+     public Label infoLabel3;
+ 
+     public void initialize(URL location, ResourceBundle resources) {
+-        tbDoRun.setText( "Gotowy" );
++        tbDoRun.setText( "Ready" );
+         tbDoRun.setStyle("-fx-background-color: #00ff00");
+         dodo = false;
+-        infoLabel2.setText("Czestotliwość: " + Integer.toString( (int) sliderTime.getValue() ) + "s");
++        infoLabel2.setText("Frequency: " + Integer.toString( (int) sliderTime.getValue() ) + " s");
+ 
+         sliderTime.valueProperty().addListener((observable, oldValue, newValue) -> {
+-            infoLabel2.setText("Czestotliwość: " + Integer.toString(newValue.intValue()) + "s");
++            infoLabel2.setText("Frequency: " + Integer.toString(newValue.intValue()) + " s");
+         });
+     }
+ 
+@@ -47,7 +47,7 @@
+ 
+             if (tbDoRun.isSelected()) {
+                 sliderTime.setDisable( true );
+-                tbDoRun.setText( "Pracuje" );
++                tbDoRun.setText( "Working" );
+                 tbDoRun.setStyle( "-fx-background-color: #ff0000" );
+                 fiveSecondsWonder = new Timeline( new KeyFrame( Duration.seconds( (int)sliderTime.getValue() ), new EventHandler<ActionEvent>() {
+ 
+@@ -88,9 +88,9 @@
+                 }, new javafx.animation.KeyValue[]{} ) );
+                 fiveSecondsWonder.setCycleCount( Timeline.INDEFINITE );
+                 fiveSecondsWonder.play();
+-                System.out.println( "zaznaczony " );
++                System.out.println( "selected " );
+             } else {
+-                tbDoRun.setText( "Gotowy" );
++                tbDoRun.setText( "Ready" );
+                 tbDoRun.setStyle( "-fx-background-color: #00ff00" );
+ 
+                 System.out.println(fiveSecondsWonder.getStatus());
+@@ -100,7 +100,7 @@
+                 sliderTime.setDisable( false );
+             }
+         }else{
+-            JOptionPane.showMessageDialog(null, "Nie wybrano klawiza do symulacji");
++            JOptionPane.showMessageDialog(null, "No key selected for simulation");
+         }
+     }
+ }
+Index: dependency-reduced-pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- dependency-reduced-pom.xml	(revision 93fcaacdbe8c0bed2e5b3e387e425a191329303e)
++++ dependency-reduced-pom.xml	(date 1591724890336)
+@@ -26,7 +26,7 @@
+             <configuration>
+               <transformers>
+                 <transformer>
+-                  <mainClass>sample.Main</mainClass>
++                  <mainClass>com.sub.Main</mainClass>
+                 </transformer>
+               </transformers>
+             </configuration>
+Index: Read.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Read.md	(date 1591726664298)
++++ Read.md	(date 1591726664298)
+@@ -0,0 +1,21 @@
++##
++# Screen saver lock
++##
++
++> A simple application that simulates keyboard keystrokes.
++> I wrote the application not to block computers with a corporate operating system whose settings I do not have access to. 
++
++[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
++
++ The application is used to:
++
++  - Prevents screen lock - quick access to your computer
++  - presentation - displaying all the time.
++
++##### Options
++- Shift key simulation
++- simulation of the Num lock key
++- Caps Lock key simulation
++
++Press frequency:
++- between 1 - 900 seconds
+\ No newline at end of file
+diff --git .idea/sonarlint/issuestore/1/f/1f7112117d06b668d0b7393b88083c71cbb038ba .idea/sonarlint/issuestore/1/f/1f7112117d06b668d0b7393b88083c71cbb038ba
+index 57fe3d6695d20665addd13bc7a6c7a23da823232..78cc276e67445a918cad2e04ec60be2fd735a7fc
+GIT binary patch
+literal 1377
+zc$}@1J#5oJ7=~2_Br<l&_~`~@5V7i%{J?~$0!T$wm68PpxWr!)qq8r%JBMaQ<wqc3
+ztHi*7sx+!-HzpVgVn%EXWvSG5VqoP@<xFBXM+;IFJjGJ{eDC|*eW{u8)J@u^XXl*!
+zL^f@aQ)Tpd8zGd)P)ewUf_0!OXbmM$!Nb4>si;C917$tizP<8eS3hILZ%^K>_UzQv
+z@nZwtL_R%D&Xlpm^tYgzo{XTt>oC`m`g@y)3b=^hPzb1YfCA%<1`6A{^X2vW_dfgc
+zgSRg<yE4qaHVS*YxBPUhxU}{ritHu|oNPW_BIgaRSI?*>1{q{}K+?RAlU~qZ2tKMN
+zcfkwVyhfGB1KWDk-PrwVgugH}C6}HhCkCQ59GIt2PzIz<^%MeC&Kc4G+LVQ;O)Tzg
+z9*xr)5^jtlVP$RMV}iYINSOUE5{%pz;{mzTj-v;htjK=(mhgN}d0ItW8|Pa>-#yKM
+zCW=1=T-r-o$fgN7z9&)>!$3Q5<1{TQsQ!sU+SbOy?!wQ%->1qbDi^mNzfbPdWus~7
+zP)&#K&HDYF&90rgV${u$Y*IH0d2m}Gv=$vfsjW|m*w*sutDd<^GX^!Eto^^KIN&XP
+zcz)01shBreDCBj@avAG7gI4yNI6x^50^Lw6_LPJv-U#|Srnui?IPa+r)CKopvKaj}
+mQs(4<GRAMAdr%AG0MCtbfOoe(y*v_Qr;SxD9cESc?fowi{t+ku
+
+diff --git screen.png screen.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..8b3e9626030a39cffc4fe5dfb116638e9d404b1c
+GIT binary patch
+literal 6637
+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
+N!BrkA7b%$p{u}IT8zTS!
+

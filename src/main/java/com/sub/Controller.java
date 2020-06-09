@@ -1,4 +1,4 @@
-package sample;
+package com.sub;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -32,13 +32,13 @@ public class Controller  implements Initializable {
     public Label infoLabel3;
 
     public void initialize(URL location, ResourceBundle resources) {
-        tbDoRun.setText( "Gotowy" );
+        tbDoRun.setText( "Ready" );
         tbDoRun.setStyle("-fx-background-color: #00ff00");
         dodo = false;
-        infoLabel2.setText("Czestotliwość: " + Integer.toString( (int) sliderTime.getValue() ) + "s");
+        infoLabel2.setText("Frequency: " + Integer.toString( (int) sliderTime.getValue() ) + " s");
 
         sliderTime.valueProperty().addListener((observable, oldValue, newValue) -> {
-            infoLabel2.setText("Czestotliwość: " + Integer.toString(newValue.intValue()) + "s");
+            infoLabel2.setText("Frequency: " + Integer.toString(newValue.intValue()) + " s");
         });
     }
 
@@ -47,7 +47,7 @@ public class Controller  implements Initializable {
 
             if (tbDoRun.isSelected()) {
                 sliderTime.setDisable( true );
-                tbDoRun.setText( "Pracuje" );
+                tbDoRun.setText( "Working" );
                 tbDoRun.setStyle( "-fx-background-color: #ff0000" );
                 fiveSecondsWonder = new Timeline( new KeyFrame( Duration.seconds( (int)sliderTime.getValue() ), new EventHandler<ActionEvent>() {
 
@@ -88,9 +88,9 @@ public class Controller  implements Initializable {
                 }, new javafx.animation.KeyValue[]{} ) );
                 fiveSecondsWonder.setCycleCount( Timeline.INDEFINITE );
                 fiveSecondsWonder.play();
-                System.out.println( "zaznaczony " );
+                System.out.println( "selected " );
             } else {
-                tbDoRun.setText( "Gotowy" );
+                tbDoRun.setText( "Ready" );
                 tbDoRun.setStyle( "-fx-background-color: #00ff00" );
 
                 System.out.println(fiveSecondsWonder.getStatus());
@@ -100,7 +100,7 @@ public class Controller  implements Initializable {
                 sliderTime.setDisable( false );
             }
         }else{
-            JOptionPane.showMessageDialog(null, "Nie wybrano klawiza do symulacji");
+            JOptionPane.showMessageDialog(null, "No key selected for simulation");
         }
     }
 }
