@@ -5,7 +5,7 @@
 > A simple application that simulates keyboard keystrokes.
 > I wrote the application not to block computers with a corporate operating system whose settings I do not have access to. 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://raw.githubusercontent.com/smyhail/ScreenSaverLock/master/photo.png)]
 
  The application is used to:
 
